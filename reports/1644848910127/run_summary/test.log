@@ -1,0 +1,2 @@
+[2022-02-14 05:28:48] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2022-02-14 05:28:48] [IMessager.java] [1] [INFO] RESULT #1: TEST [carina-test - checkFromToPriceFilterTest] FAIL [screenshots=file:///Users/apetrov/Documents/carina-test/./reports/1644848910127/77ec70d8-e3b5-44b4-87fd-7c8767aaf2bf/report.html | log=file:///Users/apetrov/Documents/carina-test/./reports/1644848910127/77ec70d8-e3b5-44b4-87fd-7c8767aaf2bf/test.log]
