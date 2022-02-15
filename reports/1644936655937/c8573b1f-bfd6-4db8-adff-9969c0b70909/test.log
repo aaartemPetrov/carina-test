@@ -1,0 +1,69 @@
+[2022-02-15 05:51:09] [TestRunRegistrar.java] [23] [WARN] Reporting disabled: using no op test run registrar
+[2022-02-15 05:51:09] [IMessager.java] [23] [INFO] TEST [ebayTest - checkSearchTest [L02]] STARTED at [17:51:09 2022-02-15]
+[2022-02-15 05:51:19] [DriverListener.java] [23] [INFO] INFO: url 'https://www.ebay.com/' is opened.
+[2022-02-15 05:51:22] [DriverListener.java] [23] [INFO] Element clicked
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] [Samsung] Galaxy S21 ультра 5G 256 ГБ 2021 новый смартфон, заводская разблокировка,
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Samsung Galaxy S10 5G G977B - 256/512GB Unlocked Grade A+ Excellent Condition
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Samsung Galaxy S20 Fe 128 ГБ 5G Dual Sim разблокированный-облако военно-морского флота
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Samsung Galaxy A52 5G/A52 | 128 ГБ AT&T Metro или GSM, разблокированный отлично 9-9.5/10
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Samsung Galaxy S20 Plus + BTS ограниченный Edition заводская разблокировка 5G 256 ГБ SM-G986
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Smartphone Samsung Galaxy S8 SM-G950 - 64 Go - Noir - A Réparer
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Разблокированный Samsung Galaxy Note GT-N7000 16 ГБ 8.0MP смартфон, WiFi, GPS смартфон
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Samsung Galaxy S10e 128Go débloqué - Sous Blister - Version SM-970U
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy S22 Ultra 128Gb Bianco Sigillato garanzia Italia
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Samsung Galaxy Mega 6.3 i9200 i9205 разблокированный смартфон 6.3" 8GB&16GB 8MP 4G LTE
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] [до заказа] 2022 Samsung Galaxy Tab S8 Ultra 5G 128/256/512GB
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Samsung Galaxy S9 SM-G960 - 64 Go - Noir - A Réparer
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Samsung Galaxy Note 3 - 32 ГБ-белый (разблокирован), AT&T, Bell, Chatr...
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] Samsung Galaxy S9+ Plus - 64GB - SM-G965 - Handy - Ohne Vertrag - Fast wie Neu
+[2022-02-15 05:51:23] [EbayTest.java] [23] [ERROR] SAMSUNG Galaxy A32 5G 6.5" смартфон 64 ГБ, Черный/Синий-британская версия
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy A50 -A505- Schwarz Smartphone Handy Ohne Vertrag Fast Wie Neu Wow
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy A50 - 64 ГБ-черный смартфон, разблокирован на 100%, Bell, Chatr...
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy S5 G900 16 ГБ AT&T T-Mobile Verizon GSM, разблокированный смартфон хороший
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy Note 3 SM-N900T-32GB — белый T-Mobile (разблокированный) смартфон
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy S20 ультра 5G 512 ГБ G988U (разблокированный) Verizon T-Mobile AT&T 2335
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy S7 32GB 5.1 Zoll 12MP SIM-Free Smartphone Schwarz
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy S9+ плюс 64 ГБ | заводская разблокировка | Verizon AT&T T-Mobile
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy S20 Plus + ⭐Wie Neu⭐ SM-G985F 128GB - Cosmic Black (Ohne Simlock)
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy S9 SM-G960 - 64 ГБ-Midnight черный (EE) (Single SIM)
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy S9-разблокированный
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] SAMSUNG different models -AS SEEN IN PICS.- Konvolut Mobile Phone
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy A5 2017 - 32GB (Ohne Simlock) Smartphone
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy A32 5G SM-A326B/DS - 64 ГБ-удивительный черный (разблокированный) смартфон
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy S10+ SM-G975U 128 ГБ разблокированный А + бесплатно 3 месяца сервисного плана
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy S8 64 ГБ разблокированный смартфон все цвета в отличном состоянии
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy Note20 Ultra 5G SM-N986B/DS - 512GB - Mystic Black (Ohne Simlock)
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy Note 4 Edge N915 32 ГБ заводской разблокированный AT&T T-мобильный смартфон в
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Оригинальный Samsung Galaxy Folder 2 G1650, две SIM-карты, 16 ГБ, 8.0MP, LTE, смартфон флип
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy S20 ультра 5G SM-G988U - 128 ГБ-космический черный (разблокированный)
+[2022-02-15 05:51:24] [EbayTest.java] [23] [ERROR] Samsung Galaxy S10 - 128GB - SM-G973 - Smartphone - Ohne Simlock
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy A52s 5G SM-A528B/DS - 128 ГБ-удивительный черный (разблокированный) смартфон
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy Note 20 ультра 5G SM-N986U - 128 ГБ-Mystic бронза (разблокирован)
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy A52s 5G SM-A528B/DS - 128 ГБ-удивительный фиолетовый (разблокированный) Dual Sim
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy Note 20 5G Mystic Gray Grau Schwarz SM-N981B/DS 256GB ⭐Wie Neu⭐
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy S10 Lite G770F/DS - 128/512GB Unlocked All Colours Good Condition
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕ* хорошая * Samsung Galaxy A30s SM-A307G/DS - 64 ГБ-синий (разблокирован)
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung galaxy a3 16GO
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy M31 SM-M315F/DS - 64GB - Blau (Ohne Simlock) (Dual SIM)
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy S20 5G 128 ГБ облако синий. разблокирован. практически в идеальном состоянии.
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy Note8 SM-N950 - 64GB - Deepsea Blue | Displayschaden
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy Note 10+ SM-N975F/DS - 256 ГБ-аура, черный (разблокированный) (Dual SIM) -
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy S10 SM-G973F - 128 ГБ-призма, черный (разблокированный) (Dual SIM)
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy S20 Fe 5G SM-G781B/DS - 128 ГБ-облако, темно-синий (EE)
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy S10 SM - 128 ГБ-призма, черный (T-Mobile) (Single SIM)
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] SAMSUNG GALAXY S21 ультра 5G (SM-G998B/DS) - 128 ГБ; призрачный черный (разблокированный)
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy Fold 3 5G - 256 ГБ-Cosmos черный (разблокированный) (Single SIM)
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] Samsung Galaxy Folder 2 32G SM-G160N разблокированный LTE 2021 новый красный/белый/серый
+[2022-02-15 05:51:25] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy Z Flip 256 ГБ AT&T черный
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy S20+ 5G 128 ГБ-космический черный (разблокированный)
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] Samsung Galaxy S10 128Go débloqués - SM-G973U - Rouge, Blanc, Vert
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] НОВОЕ ОБЪЯВЛЕНИЕSamsung Galaxy Note 8 SM-N950 - 64 ГБ-Midnight черный (заблокирован на Ee) Smartphone
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] Samsung solid B2710 Neuf Desimlocker tout opérateur robuste Téléphone mobile
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] Samsung Galaxy S8 плюс SM-G955F - 64 ГБ-орхидея-серый (Vodafone)
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] Новый SAMSUNG GALAXY S3 разблокировки мобильных телефонов ANDROID смартфон белый в коробке вверх
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] Samsung A20E inutilisable pour pièces uniquement-ne fonctionne plus
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] Samsung GT-C3590 флип простой в использовании различных цветов разблокированный мобильный телефон
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] Samsung Galaxy S10e G970DS - 28GB 256GB Unlocked All Colours Good Condition
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] S21-Samsung Galaxy 5G SM-G991B/DS - 128 ГБ-Phantom-серый (разблокирован) британская версия
+[2022-02-15 05:51:26] [EbayTest.java] [23] [ERROR] Samsung Galaxy S9 SM-G960 64 ГБ Gsm разблокированный на заводе очень хорошем состоянии.
+[2022-02-15 05:51:28] [IMessager.java] [23] [INFO] TEST [ebayTest - checkSearchTest [L02]] PASSED at [17:51:28 2022-02-15]

@@ -1,0 +1,3 @@
+[2022-02-15 04:03:48] [EbayTest.java] [1] [INFO] Screenshot is captured successfully.
+[2022-02-15 04:03:48] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2022-02-15 04:03:48] [IMessager.java] [1] [INFO] RESULT #1: TEST [carina-test - checkStorageCapacityFilter] FAIL [screenshots=file:///Users/apetrov/Documents/carina-test/./reports/1644930091191/8f08ad35-dd28-4a13-bb08-b692eede93b7/report.html | log=file:///Users/apetrov/Documents/carina-test/./reports/1644930091191/8f08ad35-dd28-4a13-bb08-b692eede93b7/test.log]

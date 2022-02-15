@@ -21,7 +21,7 @@ public class Product extends AbstractUIObject {
     }
 
     public ExtendedWebElement getSearchedItemTitle() {
-        return searchedItemTitle;
+        return this.searchedItemTitle;
     }
 
     public void setSearchedItemTitle(ExtendedWebElement searchedItemTitle) {
@@ -29,7 +29,7 @@ public class Product extends AbstractUIObject {
     }
 
     public ExtendedWebElement getSearchedItemPrice() {
-        return searchedItemPrice;
+        return this.searchedItemPrice;
     }
 
     public void setSearchedItemPrice(ExtendedWebElement searchedItemPrice) {
@@ -37,7 +37,7 @@ public class Product extends AbstractUIObject {
     }
 
     public ExtendedWebElement getSearchedItemLink() {
-        return searchedItemLink;
+        return this.searchedItemLink;
     }
 
     public void setSearchedItemLink(ExtendedWebElement searchedItemLink) {

@@ -8,12 +8,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.time.Duration;
-
 public class AbstractPage {
 
     private static final Logger LOGGER = LogManager.getLogger(AbstractPage.class);
-    private static final Duration TIMEOUT = Duration.ofSeconds(10);
 
     public static void click(WebDriver driver, ExtendedWebElement element) {
         String elementName = element.getName();

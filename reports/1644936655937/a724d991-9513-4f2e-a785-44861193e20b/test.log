@@ -1,0 +1,6 @@
+[2022-02-15 05:50:56] [TestRunRegistrar.java] [24] [WARN] Reporting disabled: using no op test run registrar
+[2022-02-15 05:50:56] [IMessager.java] [24] [INFO] TEST [ebayTest - checkUnderPriceFilterTest] STARTED at [17:50:56 2022-02-15]
+[2022-02-15 05:51:02] [DriverListener.java] [24] [INFO] INFO: url 'https://www.ebay.com/' is opened.
+[2022-02-15 05:51:05] [DriverListener.java] [24] [INFO] Element clicked
+[2022-02-15 05:51:08] [DriverListener.java] [24] [INFO] Element clicked
+[2022-02-15 05:51:10] [IMessager.java] [24] [INFO] TEST [ebayTest - checkUnderPriceFilterTest] PASSED at [17:51:10 2022-02-15]

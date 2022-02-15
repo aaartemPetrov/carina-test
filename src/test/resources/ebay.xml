@@ -1,0 +1,20 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="ebay">
+
+    <test parallel="methods" thread-count="5" name="ebayTest">
+        <classes>
+            <class name="com.solvd.carinatest.EbayTest">
+                <methods>
+                    <include name="checkSearchTooltipTest"/>
+                    <include name="checkSearchTest"/>
+                    <include name="checkUnderPriceFilterTest"/>
+                    <include name="checkFromToPriceFilterTest"/>
+                    <include name="checkStorageCapacityFilter"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

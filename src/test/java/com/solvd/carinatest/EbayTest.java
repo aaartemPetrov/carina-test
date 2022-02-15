@@ -1,17 +1,19 @@
 package com.solvd.carinatest;
 
 import com.qaprosoft.carina.core.foundation.AbstractTest;
+import com.solvd.carinatest.components.FilterFrame;
 import com.solvd.carinatest.components.Product;
 import com.solvd.carinatest.components.SearchTooltip;
 import org.apache.commons.lang3.StringUtils;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
@@ -123,6 +125,38 @@ public class EbayTest extends AbstractTest {
             }
         });
         softAssertPrice.assertAll();
+    }
+
+    @Test
+    public void checkStorageCapacityFilter() {
+        HomePage homePage = new HomePage(getDriver());
+        homePage.open();
+        AbstractPage.sendKeys(getDriver(), homePage.getSearchInput(), "samsung");
+        AbstractPage.click(getDriver(), homePage.getSearchButton());
+
+        SearchedResultPage searchedResultPage = new SearchedResultPage(getDriver());
+        AbstractPage.click(getDriver(), searchedResultPage.getMoreFiltersButton());
+
+        FilterFrame filterFrame = new FilterFrame(getDriver());
+        filterFrame.getFilterMenu().chooseAndClick("Storage Capacity");
+        filterFrame.getFilterBlock().chooseAndClickCheckbox("128 GB");
+        AbstractPage.click(getDriver(), filterFrame.getApplyButton());
+
+        SoftAssert softAssert = new SoftAssert();
+        searchedResultPage.getProductBlock().getProducts().forEach(product -> {
+            String oldTab = getDriver().getWindowHandle();
+            AbstractPage.click(getDriver(), product.getSearchedItemLink());
+            List<String> newTab = new ArrayList<>(getDriver().getWindowHandles());
+            newTab.remove(oldTab);
+            getDriver().switchTo().window(newTab.get(0));
+
+            String itemTitle = getDriver().findElement(By.cssSelector("#itemTitle span")).getText().toLowerCase(Locale.ROOT);
+            softAssert.assertTrue(itemTitle.contains("128gb"), "Item title don't contains \"128GB\" text.");
+
+            getDriver().close();
+            getDriver().switchTo().window(oldTab);
+        });
+        softAssert.assertAll();
     }
 
 }

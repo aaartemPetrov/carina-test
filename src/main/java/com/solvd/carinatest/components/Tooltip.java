@@ -14,7 +14,7 @@ public class Tooltip extends AbstractUIObject {
     }
 
     public ExtendedWebElement getTooltipLink() {
-        return tooltipLink;
+        return this.tooltipLink;
     }
 
     public void setTooltipLink(ExtendedWebElement tooltipLink) {

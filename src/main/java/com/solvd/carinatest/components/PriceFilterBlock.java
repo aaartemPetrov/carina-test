@@ -20,7 +20,7 @@ public class PriceFilterBlock extends AbstractUIObject {
     }
 
     public ExtendedWebElement getUnderPriceLink() {
-        return underPriceLink;
+        return this.underPriceLink;
     }
 
     public void setUnderPriceLink(ExtendedWebElement underPriceLink) {
@@ -28,7 +28,7 @@ public class PriceFilterBlock extends AbstractUIObject {
     }
 
     public ExtendedWebElement getFromToPriceLink() {
-        return fromToPriceLink;
+        return this.fromToPriceLink;
     }
 
     public void setFromToPriceLink(ExtendedWebElement fromToPriceLink) {
@@ -36,7 +36,7 @@ public class PriceFilterBlock extends AbstractUIObject {
     }
 
     public ExtendedWebElement getOverPriceLink() {
-        return overPriceLink;
+        return this.overPriceLink;
     }
 
     public void setOverPriceLink(ExtendedWebElement overPriceLink) {

@@ -19,7 +19,7 @@ public class SearchTooltip extends AbstractUIObject {
     }
 
     public List<Tooltip> getTooltips() {
-        return tooltips;
+        return this.tooltips;
     }
 
     public void setTooltips(List<Tooltip> tooltips) {

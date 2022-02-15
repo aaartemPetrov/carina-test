@@ -17,7 +17,7 @@ public class HomePage extends AbstractPage {
     }
 
     public ExtendedWebElement getSearchInput() {
-        return searchInput;
+        return this.searchInput;
     }
 
     public void setSearchInput(ExtendedWebElement searchInput) {
@@ -25,7 +25,7 @@ public class HomePage extends AbstractPage {
     }
 
     public ExtendedWebElement getSearchButton() {
-        return searchButton;
+        return this.searchButton;
     }
 
     public void setSearchButton(ExtendedWebElement searchButton) {

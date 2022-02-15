@@ -19,7 +19,7 @@ public class ProductBlock extends AbstractUIObject {
     }
 
     public PriceFilterBlock getPriceFilterBlock() {
-        return priceFilterBlock;
+        return this.priceFilterBlock;
     }
 
     public void setPriceFilterBlock(PriceFilterBlock priceFilterBlock) {
@@ -27,7 +27,7 @@ public class ProductBlock extends AbstractUIObject {
     }
 
     public List<Product> getProducts() {
-        return products;
+        return this.products;
     }
 
     public void setProducts(List<Product> products) {
