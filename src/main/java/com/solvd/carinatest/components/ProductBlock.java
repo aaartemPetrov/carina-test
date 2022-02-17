@@ -1,10 +1,12 @@
 package com.solvd.carinatest.components;
 
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
+import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Locale;
 import java.util.stream.Collectors;
@@ -38,9 +40,31 @@ public class ProductBlock extends AbstractUIObject {
                 .collect(Collectors.toList());
     }
 
-    public List<String> getProductsPrices() {
+    public List<Integer> getMinPrices() {
+        return this.getProductsPrices().stream()
+                .map(productPrices -> productPrices.get(0))
+                .collect(Collectors.toList());
+    }
+
+    public List<Integer> getMaxPrices() {
+        return this.getProductsPrices().stream()
+                .map(productPrices -> {
+                    if(productPrices.size() == 1) {
+                        return productPrices.get(0);
+                    } else {
+                        return productPrices.get(1);
+                    }
+                })
+                .collect(Collectors.toList());
+    }
+
+    private List<List<Integer>> getProductsPrices() {
         return this.products.stream()
-                .map(product -> product.getProductPrice())
+                .map(product -> {
+                    String productPrice = StringUtils.replaceChars(product.getProductName(), ",", ".");
+                    return Arrays.stream(StringUtils.substringsBetween(productPrice, "$", "."))
+                            .map(price -> Integer.parseInt(price)).collect(Collectors.toList());
+                })
                 .collect(Collectors.toList());
     }
 

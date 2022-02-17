@@ -1,0 +1,2 @@
+[2022-02-17 02:52:05] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
+[2022-02-17 02:52:05] [IMessager.java] [1] [INFO] RESULT #1: TEST [carina-test - checkSearchTooltipTest] FAIL [log=file:///Users/apetrov/Documents/carina-test/./reports/1645098722542/34ab315a-e2e6-45fe-a495-1ac534b7e42c/test.log]

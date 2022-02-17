@@ -64,13 +64,9 @@ public class EbayTest extends AbstractTest {
         searchedResultPage.clickUnderPriceLink();
         Assert.assertNotEquals(searchedResultPage.productsCount(), 0, "There are no searched products in list.");
 
-        int underPrice = searchedResultPage.getUnderFilterPrice();
         SoftAssert softAssertPrice = new SoftAssert();
-        searchedResultPage.getProductsPrices().forEach(price -> {
-            price = StringUtils.replaceChars(price, ",", ".");
-            int actualPrice = Integer.parseInt(StringUtils.substringBetween(price, "$", "."));
-            softAssertPrice.assertTrue(actualPrice <= underPrice,
-                    String.format("Price %d is bigger then %d", actualPrice, underPrice));
+        searchedResultPage.getMinPrices().forEach(actualItemPrice -> {
+            softAssertPrice.assertTrue(actualItemPrice <= searchedResultPage.getUnderFilterPrice(), String.format("Price %d is bigger then %d.", actualItemPrice, searchedResultPage.getUnderFilterPrice()));
         });
         softAssertPrice.assertAll();
     }
@@ -86,29 +82,19 @@ public class EbayTest extends AbstractTest {
         searchedResultPage.clickFromToPriceLink();
         Assert.assertNotEquals(searchedResultPage.productsCount(), 0, "There are no searched products in list.");
 
-        int fromPrice = searchedResultPage.getFromFilterPrice();
-        int toPrice = searchedResultPage.getToFilterPrice();
-        SoftAssert softAssertPrice = new SoftAssert();
-        searchedResultPage.getProductsPrices().forEach(price -> {
-            price = StringUtils.replaceChars(price, ",", ".");
-            String[] prices = StringUtils.substringsBetween(price, "$", ".");
-
-            if (prices.length == 1) {
-                int actualPrice = Integer.parseInt(prices[0]);
-                softAssertPrice.assertTrue(fromPrice <= actualPrice
-                                && actualPrice <= toPrice,
-                        String.format("Price %d is not in range from %d to %d", actualPrice,
-                                fromPrice, toPrice));
-            } else {
-                int actualMinPrice = Integer.parseInt(prices[0]);
-                int actualMaxPrice = Integer.parseInt(prices[1]);
-                softAssertPrice.assertTrue(fromPrice <= actualMinPrice
-                                && actualMaxPrice <= toPrice,
-                        String.format("Price %d-%d is not in range from %d to %d", actualMinPrice, actualMaxPrice,
-                                fromPrice, toPrice));
-            }
+        SoftAssert softAssertMinPrice = new SoftAssert();
+        searchedResultPage.getMinPrices().forEach(actualItemPrice -> {
+            softAssertMinPrice.assertTrue(searchedResultPage.getFromFilterPrice() <= actualItemPrice,
+                    String.format("Price %d is lower then %d.", actualItemPrice, searchedResultPage.getFromFilterPrice()));
         });
-        softAssertPrice.assertAll();
+        softAssertMinPrice.assertAll();
+
+        SoftAssert softAssertMaxPrice = new SoftAssert();
+        searchedResultPage.getMaxPrices().forEach(actualItemPrice -> {
+            softAssertMaxPrice.assertTrue(actualItemPrice <= searchedResultPage.getToFilterPrice(),
+                    String.format("Price %d is bigger then %d.", actualItemPrice, searchedResultPage.getToFilterPrice()));
+        });
+        softAssertMaxPrice.assertAll();
     }
 
     @Test

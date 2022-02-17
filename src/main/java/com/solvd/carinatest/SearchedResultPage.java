@@ -27,8 +27,12 @@ public class SearchedResultPage extends AbstractPage {
         return this.productBlock.productsCount();
     }
 
-    public List<String> getProductsPrices() {
-        return this.productBlock.getProductsPrices();
+    public List<Integer> getMinPrices() {
+        return this.productBlock.getMinPrices();
+    }
+
+    public List<Integer> getMaxPrices() {
+        return this.productBlock.getMaxPrices();
     }
 
     public List<String> getProductsNames() {
