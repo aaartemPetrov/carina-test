@@ -2,6 +2,7 @@ package com.solvd.carinatest.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
+import com.solvd.carinatest.AbstractFunctional;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -17,20 +18,12 @@ public class FilterItem extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public ExtendedWebElement getCheckbox() {
-        return this.checkbox;
+    public String labelText() {
+        return this.label.getText();
     }
 
-    public void setCheckbox(ExtendedWebElement checkbox) {
-        this.checkbox = checkbox;
-    }
-
-    public ExtendedWebElement getLabel() {
-        return this.label;
-    }
-
-    public void setLabel(ExtendedWebElement label) {
-        this.label = label;
+    public void clickCheckbox() {
+        AbstractFunctional.click(this.driver, this.checkbox);
     }
 
 }

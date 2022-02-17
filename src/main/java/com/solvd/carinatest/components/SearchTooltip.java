@@ -18,12 +18,8 @@ public class SearchTooltip extends AbstractUIObject {
         setRootElement(driver.findElement(this.rootElement));
     }
 
-    public List<Tooltip> getTooltips() {
-        return this.tooltips;
-    }
-
-    public void setTooltips(List<Tooltip> tooltips) {
-        this.tooltips = tooltips;
+    public int tooltipsCount() {
+        return tooltips.size();
     }
 
 }

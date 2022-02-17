@@ -16,20 +16,12 @@ public class HomePage extends AbstractPage {
         super(driver);
     }
 
-    public ExtendedWebElement getSearchInput() {
-        return this.searchInput;
+    public void typeInSearchInput(String text) {
+        AbstractFunctional.sendKeys(this.driver, this.searchInput, text);
     }
 
-    public void setSearchInput(ExtendedWebElement searchInput) {
-        this.searchInput = searchInput;
-    }
-
-    public ExtendedWebElement getSearchButton() {
-        return this.searchButton;
-    }
-
-    public void setSearchButton(ExtendedWebElement searchButton) {
-        this.searchButton = searchButton;
+    public void clickSearchButton() {
+        AbstractFunctional.click(this.driver, this.searchButton);
     }
 
 }

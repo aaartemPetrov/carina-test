@@ -6,6 +6,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
+import java.util.Locale;
+import java.util.stream.Collectors;
 
 public class ProductBlock extends AbstractUIObject {
 
@@ -18,20 +20,56 @@ public class ProductBlock extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public PriceFilterBlock getPriceFilterBlock() {
-        return this.priceFilterBlock;
+    public void clickOnProductByName(String productName) {
+        this.products.stream()
+                .filter(product -> productName.toLowerCase(Locale.ROOT).equals(product.getProductName().toLowerCase(Locale.ROOT)))
+                .findFirst()
+                .orElseThrow(() -> new RuntimeException(String.format("There is no \"%s\" in searched product list.")))
+                .clickOnProduct();
     }
 
-    public void setPriceFilterBlock(PriceFilterBlock priceFilterBlock) {
-        this.priceFilterBlock = priceFilterBlock;
+    public int productsCount() {
+        return  this.products.size();
     }
 
-    public List<Product> getProducts() {
-        return this.products;
+    public List<String> getProductsNames() {
+        return this.products.stream()
+                .map(product -> product.getProductName())
+                .collect(Collectors.toList());
     }
 
-    public void setProducts(List<Product> products) {
-        this.products = products;
+    public List<String> getProductsPrices() {
+        return this.products.stream()
+                .map(product -> product.getProductPrice())
+                .collect(Collectors.toList());
+    }
+
+    public String underPriceLinkText() {
+        return this.priceFilterBlock.underPriceLinkText();
+    }
+
+    public String fromToPriceLinkText() {
+        return this.priceFilterBlock.fromToPriceLinkText();
+    }
+
+    public void clickUnderPriceLink() {
+        this.priceFilterBlock.clickUnderPriceLink();
+    }
+
+    public void clickFromToPriceLink() {
+        this.priceFilterBlock.clickFromToPriceLink();
+    }
+
+    public int getUnderFilterPrice() {
+        return this.priceFilterBlock.getUnderFilterPrice();
+    }
+
+    public int getFromFilterPrice() {
+        return this.priceFilterBlock.getFromFilterPrice();
+    }
+
+    public int getToFilterPrice() {
+        return this.priceFilterBlock.getToFilterPrice();
     }
 
 }

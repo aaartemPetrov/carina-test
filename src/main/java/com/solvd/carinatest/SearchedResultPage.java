@@ -6,6 +6,8 @@ import com.solvd.carinatest.components.ProductBlock;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class SearchedResultPage extends AbstractPage {
 
     @FindBy(css = "#srp-river-results")
@@ -17,20 +19,52 @@ public class SearchedResultPage extends AbstractPage {
         super(driver);
     }
 
-    public ProductBlock getProductBlock() {
-        return this.productBlock;
+    public void clickOnProductByName(String productName) {
+        this.productBlock.clickOnProductByName(productName);
     }
 
-    public void setProductBlock(ProductBlock productBlock) {
-        this.productBlock = productBlock;
+    public int productsCount() {
+        return this.productBlock.productsCount();
     }
 
-    public ExtendedWebElement getMoreFiltersButton() {
-        return this.moreFiltersButton;
+    public List<String> getProductsPrices() {
+        return this.productBlock.getProductsPrices();
     }
 
-    public void setMoreFiltersButton(ExtendedWebElement moreFiltersButton) {
-        this.moreFiltersButton = moreFiltersButton;
+    public List<String> getProductsNames() {
+        return this.productBlock.getProductsNames();
+    }
+
+    public void clickMoreFilterButton() {
+        this.moreFiltersButton.click();
+    }
+
+    public String underPriceLinkText() {
+        return this.productBlock.underPriceLinkText();
+    }
+
+    public String fromToPriceLinkText() {
+        return this.productBlock.fromToPriceLinkText();
+    }
+
+    public void clickUnderPriceLink() {
+        this.productBlock.clickUnderPriceLink();
+    }
+
+    public void clickFromToPriceLink() {
+        this.productBlock.clickFromToPriceLink();
+    }
+
+    public int getUnderFilterPrice() {
+        return this.productBlock.getUnderFilterPrice();
+    }
+
+    public int getFromFilterPrice() {
+        return this.productBlock.getFromFilterPrice();
+    }
+
+    public int getToFilterPrice() {
+        return this.productBlock.getToFilterPrice();
     }
 
 }

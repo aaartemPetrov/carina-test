@@ -2,6 +2,7 @@ package com.solvd.carinatest.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
+import com.solvd.carinatest.AbstractFunctional;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -15,12 +16,12 @@ public class FilterMenuItem extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public ExtendedWebElement getLabelLink() {
-        return this.labelLink;
+    public String getlabelLinkText() {
+        return this.labelLink.getText();
     }
 
-    public void setLabelLink(ExtendedWebElement labelLink) {
-        this.labelLink = labelLink;
+    public void clickFilterMenuItem() {
+        AbstractFunctional.click(this.driver, this.labelLink);
     }
 
 }

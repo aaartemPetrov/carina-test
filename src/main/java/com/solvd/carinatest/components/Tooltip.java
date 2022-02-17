@@ -13,12 +13,4 @@ public class Tooltip extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public ExtendedWebElement getTooltipLink() {
-        return this.tooltipLink;
-    }
-
-    public void setTooltipLink(ExtendedWebElement tooltipLink) {
-        this.tooltipLink = tooltipLink;
-    }
-
 }

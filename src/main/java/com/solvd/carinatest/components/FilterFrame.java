@@ -2,6 +2,7 @@ package com.solvd.carinatest.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
+import com.solvd.carinatest.AbstractFunctional;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
@@ -33,28 +34,16 @@ public class FilterFrame extends AbstractUIObject {
         webDriverWait.until(notUsed -> this.filterMenu != null && this.filterBlock != null);
     }
 
-    public FilterMenu getFilterMenu() {
-        return this.filterMenu;
+    public void clickOnCheckbox(String checkboxLabel) {
+        this.filterBlock.clickOnCheckbox(checkboxLabel);
     }
 
-    public void setFilterMenu(FilterMenu filterMenu) {
-        this.filterMenu = filterMenu;
+    public void clickOnMenuItem(String menuItem) {
+        this.filterMenu.clickOnMenuItem(menuItem);
     }
 
-    public FilterBlock getFilterBlock() {
-        return this.filterBlock;
-    }
-
-    public void setFilterBlock(FilterBlock filterBlock) {
-        this.filterBlock = filterBlock;
-    }
-
-    public ExtendedWebElement getApplyButton() {
-        return this.applyButton;
-    }
-
-    public void setApplyButton(ExtendedWebElement applyButton) {
-        this.applyButton = applyButton;
+    public void clickApplyButton() {
+        AbstractFunctional.click(this.driver, this.applyButton);
     }
 
 }

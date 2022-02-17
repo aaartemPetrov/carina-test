@@ -19,25 +19,16 @@ public class FilterBlock extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public void chooseAndClickCheckbox(String item) {
+    public void clickOnCheckbox(String item) {
         new WebDriverWait(getDriver(), 10)
                 .until(notUsed -> !this.filterItems.isEmpty());
 
         this.filterItems.stream()
                 .filter(filterItem -> item.toLowerCase(Locale.ROOT).equals(
-                        StringUtils.substringBefore(filterItem.getLabel().getElement().getText().toLowerCase(Locale.ROOT), "\n")))
+                        StringUtils.substringBefore(filterItem/*.getLabel().getElement()*/.labelText().toLowerCase(Locale.ROOT), "\n")))
                 .findFirst()
-                .map(filterMenuItem -> filterMenuItem.getCheckbox())
                 .orElseThrow(() -> new RuntimeException(String.format("There is no \"%s\" filter item.", item)))
-                .click();
-    }
-
-    public List<FilterItem> getFilterItems() {
-        return this.filterItems;
-    }
-
-    public void setFilterItems(List<FilterItem> filterItems) {
-        this.filterItems = filterItems;
+                .clickCheckbox();
     }
 
 }

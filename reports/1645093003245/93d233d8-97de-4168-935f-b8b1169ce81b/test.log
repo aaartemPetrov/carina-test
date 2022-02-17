@@ -1,0 +1,36 @@
+[2022-02-17 01:17:21] [TestRunRegistrar.java] [23] [WARN] Reporting disabled: using no op test run registrar
+[2022-02-17 01:17:21] [IMessager.java] [23] [INFO] TEST [ebayTest - checkSearchTest [L03]] STARTED at [13:17:21 2022-02-17]
+[2022-02-17 01:17:24] [DriverListener.java] [23] [INFO] INFO: url 'https://www.ebay.com/' is opened.
+[2022-02-17 01:17:27] [DriverListener.java] [23] [INFO] Element clicked
+[2022-02-17 01:17:36] [IMessager.java] [23] [ERROR] TEST [ebayTest - checkSearchTest [L03]] FAILED at [13:17:36 2022-02-17] - The following asserts failed:
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false],
+	Product title does not contain brand name "Apple" expected [true] but found [false]
+
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
+org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
+com.solvd.carinatest.EbayTest.checkSearchTest(EbayTest.java:53)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+java.base/java.lang.reflect.Method.invoke(Method.java:568)
+org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+java.base/java.lang.Thread.run(Thread.java:833)

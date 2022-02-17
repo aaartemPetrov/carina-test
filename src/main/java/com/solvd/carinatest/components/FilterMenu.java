@@ -17,21 +17,12 @@ public class FilterMenu extends AbstractUIObject {
         super(driver, searchContext);
     }
 
-    public void chooseAndClick(String menuItem) {
+    public void clickOnMenuItem(String menuItem) {
         this.filterMenuItems.stream()
-                .filter(filterMenuItem -> menuItem.toLowerCase(Locale.ROOT).equals(filterMenuItem.getLabelLink().getText().toLowerCase(Locale.ROOT)))
+                .filter(filterMenuItem -> menuItem.toLowerCase(Locale.ROOT).equals(filterMenuItem.getlabelLinkText().toLowerCase(Locale.ROOT)))
                 .findFirst()
-                .map(filterMenuItem -> filterMenuItem.getLabelLink())
                 .orElseThrow(() -> new RuntimeException(String.format("There is no \"%s\" menu item.", menuItem)))
-                .click();
-    }
-
-    public List<FilterMenuItem> getFilterMenuItems() {
-        return this.filterMenuItems;
-    }
-
-    public void setFilterMenuItems(List<FilterMenuItem> filterMenuItems) {
-        this.filterMenuItems = filterMenuItems;
+                .clickFilterMenuItem();
     }
 
 }
