@@ -1,2 +1,0 @@
-[2022-02-15 05:10:50] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
-[2022-02-15 05:10:50] [IMessager.java] [1] [INFO] RESULT #1: TEST [carina-test - checkStorageCapacityFilter] FAIL [screenshots=file:///Users/apetrov/Documents/carina-test/./reports/1644934113382/5c27f7c4-2572-4620-bc3a-6469cb38357a/report.html | log=file:///Users/apetrov/Documents/carina-test/./reports/1644934113382/5c27f7c4-2572-4620-bc3a-6469cb38357a/test.log]

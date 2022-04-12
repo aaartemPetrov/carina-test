@@ -3,7 +3,6 @@ package com.solvd.carinatest;
 import com.qaprosoft.carina.core.foundation.AbstractTest;
 import com.solvd.carinatest.components.FilterFrame;
 import com.solvd.carinatest.components.SearchTooltip;
-import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

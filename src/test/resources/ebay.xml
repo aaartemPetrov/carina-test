@@ -3,6 +3,12 @@
 
 <suite name="ebay">
 
+    <parameter name="suiteOwner" value="apetrov"/>
+    <parameter name="jenkinsJobName" value="carinaTest"/>
+    <parameter name="jenkinsJobType" value="ebay"/>
+    <parameter name="jenkinsEmail" value="apetrov@solvd.com"/>
+    <parameter name="jenkinsEnvironments" value="DEMO"/>
+
     <test parallel="methods" thread-count="5" name="ebayTest">
         <classes>
             <class name="com.solvd.carinatest.EbayTest">
