@@ -3,10 +3,10 @@
 
 <suite name="ebay">
 
-    <parameter name="suiteOwner" value="apetrov"/>
-    <parameter name="jenkinsJobName" value="carinaTest"/>
-    <parameter name="jenkinsJobType" value="ebay"/>
-    <parameter name="jenkinsEmail" value="apetrov@solvd.com"/>
+    <parameter name="suiteOwner" value="qpsdemo"/>
+    <parameter name="jenkinsJobName" value="Job1"/>
+    <parameter name="jenkinsJobType" value="api"/>
+    <parameter name="jenkinsEmail" value="test@qaprosoft.com"/>
     <parameter name="jenkinsEnvironments" value="DEMO"/>
 
     <test parallel="methods" thread-count="5" name="ebayTest">
