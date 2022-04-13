@@ -1,3 +1,6 @@
 /.idea
 /carina-test.iml
 .DS_Store
+/screenshots
+/reports
+/target
