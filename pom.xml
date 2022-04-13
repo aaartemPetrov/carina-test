@@ -16,7 +16,7 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <zebrunner-agent.version>1.6.7</zebrunner-agent.version>
-        <suite>default</suite>
+        <suite>ebay</suite>
     </properties>
 
     <dependencies>
