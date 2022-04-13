@@ -1,6 +1,0 @@
-[2022-02-17 02:51:11] [TestRunRegistrar.java] [23] [WARN] Reporting disabled: using no op test run registrar
-[2022-02-17 02:51:11] [TestRunRegistrar.java] [23] [WARN] Reporting disabled: using no op test run registrar
-[2022-02-17 02:51:11] [IMessager.java] [23] [INFO] TEST [ebayTest - checkSearchTest [L01]] STARTED at [14:51:11 2022-02-17]
-[2022-02-17 02:51:16] [DriverListener.java] [23] [INFO] INFO: url 'https://www.ebay.com/' is opened.
-[2022-02-17 02:51:20] [DriverListener.java] [23] [INFO] Element clicked
-[2022-02-17 02:51:22] [IMessager.java] [23] [INFO] TEST [ebayTest - checkSearchTest [L01]] PASSED at [14:51:22 2022-02-17]

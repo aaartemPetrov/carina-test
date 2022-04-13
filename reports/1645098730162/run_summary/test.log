@@ -1,6 +1,0 @@
-[2022-02-17 02:52:19] [IMessager.java] [1] [INFO] INFO: '**************** Test execution summary ****************'.
-[2022-02-17 02:52:19] [IMessager.java] [1] [INFO] RESULT #1: TEST [carina-test - checkSearchTest [L01]] FAIL [log=file:///Users/apetrov/Documents/carina-test/./reports/1645098730162/9fea3904-7c77-4578-b345-6bc68fcd7552/test.log]
-[2022-02-17 02:52:19] [IMessager.java] [1] [INFO] RESULT #2: TEST [carina-test - checkSearchTest [L02]] FAIL [log=file:///Users/apetrov/Documents/carina-test/./reports/1645098730162/96a5b632-cfaa-4644-89cf-671e2d0d1a24/test.log]
-[2022-02-17 02:52:19] [IMessager.java] [1] [INFO] RESULT #3: TEST [carina-test - checkSearchTest [L03]] FAIL [log=file:///Users/apetrov/Documents/carina-test/./reports/1645098730162/0ea1a151-2e31-40b0-9ed4-872a6684d1c5/test.log]
-[2022-02-17 02:52:19] [IMessager.java] [1] [INFO] RESULT #4: TEST [carina-test - checkSearchTest [L04]] FAIL [log=file:///Users/apetrov/Documents/carina-test/./reports/1645098730162/a6df1116-9133-409e-8b6c-04a4ada3e7dc/test.log]
-[2022-02-17 02:52:19] [IMessager.java] [1] [INFO] RESULT #5: TEST [carina-test - checkSearchTest [L05]] FAIL [log=file:///Users/apetrov/Documents/carina-test/./reports/1645098730162/4892fa80-7388-40e0-bf45-139b9fe2d086/test.log]
