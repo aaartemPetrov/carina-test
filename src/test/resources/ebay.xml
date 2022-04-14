@@ -7,6 +7,7 @@
     <parameter name="jenkinsJobType" value="web"/>
     <parameter name="jenkinsEmail" value="demo@qaprosoft.com"/>
     <parameter name="jenkinsEnvironments" value="DEMO"/>
+    <parameter name="jenkinsPipelineEnvironments" value="DEMO"/>
     <parameter name="provider" value="selenium"/>
 
     <test parallel="methods" thread-count="5" name="ebayTest">
