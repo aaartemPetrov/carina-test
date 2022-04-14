@@ -1,15 +1,13 @@
-<?xml version = "1.0" encoding = "UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
-<suite name="ebay">
+<suite verbose="1" name="ebay">
 
-    <parameter name="suiteOwner" value="apetrov"/>
-    <parameter name="jenkinsJobName" value="EbayJob"/>
+    <parameter name="suiteOwner" value="qpsdemo"/>
+    <parameter name="jenkinsJobName" value="JobJobJob"/>
     <parameter name="jenkinsJobType" value="web"/>
-    <parameter name="jenkinsEmail" value="test@qaprosoft.com"/>
+    <parameter name="jenkinsEmail" value="demo@qaprosoft.com"/>
     <parameter name="jenkinsEnvironments" value="DEMO"/>
     <parameter name="provider" value="selenium"/>
-    <parameter name="suite" value="ebay"></parameter>
 
     <test parallel="methods" thread-count="5" name="ebayTest">
         <classes>
