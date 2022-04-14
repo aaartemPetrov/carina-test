@@ -8,7 +8,7 @@
     <parameter name="jenkinsJobType" value="web"/>
     <parameter name="jenkinsEmail" value="test@qaprosoft.com"/>
     <parameter name="jenkinsEnvironments" value="PROD"/>
-    <parameter name="hiddenParam::provider::provider" value="selenium"/>
+    <parameter name="provider" value="selenium"/>
 
     <test parallel="methods" thread-count="5" name="ebayTest">
         <classes>
