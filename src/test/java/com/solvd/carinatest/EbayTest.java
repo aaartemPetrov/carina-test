@@ -1,6 +1,7 @@
 package com.solvd.carinatest;
 
 import com.qaprosoft.carina.core.foundation.AbstractTest;
+import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.solvd.carinatest.components.FilterFrame;
 import com.solvd.carinatest.components.SearchTooltip;
 import org.openqa.selenium.By;
@@ -20,6 +21,7 @@ public class EbayTest extends AbstractTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(EbayTest.class);
 
     @Test
+    @MethodOwner(owner = "qpsdemo")
     public void checkSearchTooltipTest() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -35,6 +37,7 @@ public class EbayTest extends AbstractTest {
     }
 
     @Test(dataProvider = "brandNamesForSearch")
+    @MethodOwner(owner = "qpsdemo")
     public void checkSearchTest(String brandName) {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -53,6 +56,7 @@ public class EbayTest extends AbstractTest {
     }
 
     @Test
+    @MethodOwner(owner = "qpsdemo")
     public void checkUnderPriceFilterTest() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -71,6 +75,7 @@ public class EbayTest extends AbstractTest {
     }
 
     @Test
+    @MethodOwner(owner = "qpsdemo")
     public void checkFromToPriceFilterTest() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();
@@ -97,6 +102,7 @@ public class EbayTest extends AbstractTest {
     }
 
     @Test
+    @MethodOwner(owner = "qpsdemo")
     public void checkStorageCapacityFilter() {
         HomePage homePage = new HomePage(getDriver());
         homePage.open();

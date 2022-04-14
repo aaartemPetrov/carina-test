@@ -1,26 +1,21 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-
-<suite verbose="1" name="ebay">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="1" name="testEbay" parallel="methods">
 
     <parameter name="suiteOwner" value="qpsdemo"/>
-    <parameter name="jenkinsJobName" value="JobJobJob"/>
+    <parameter name="jenkinsJobName" value="ebabayTest"/>
     <parameter name="jenkinsJobType" value="web"/>
-    <parameter name="jenkinsEmail" value="demo@qaprosoft.com"/>
     <parameter name="jenkinsEnvironments" value="DEMO"/>
+    <parameter name="jenkinsEmail" value="demo@qaprosoft.com"/>
+    <parameter name="jenkinsRegressionPipeline" value="web_regression, full_regression"/>
     <parameter name="jenkinsPipelineEnvironments" value="DEMO"/>
-    <parameter name="provider" value="selenium"/>
+    <parameter name="provider" value="selenium"></parameter>
+    <parameter name="jenkinsJobExecutionOrder" value="1"/>
+    <parameter name="jenkinsJobExecutionMode" value="continue"/>
+    <parameter name="jenkinsAutoScreenshot" value="true"/>
 
-    <test parallel="methods" thread-count="5" name="ebayTest">
+    <test name="ebayTest">
         <classes>
-            <class name="com.solvd.carinatest.EbayTest">
-                <methods>
-                    <include name="checkSearchTooltipTest"/>
-                    <include name="checkSearchTest"/>
-                    <include name="checkUnderPriceFilterTest"/>
-                    <include name="checkFromToPriceFilterTest"/>
-                    <include name="checkStorageCapacityFilter"/>
-                </methods>
-            </class>
+            <class name="com.solvd.carinatest.EbayTest"/>
         </classes>
     </test>
 
