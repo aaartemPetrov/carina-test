@@ -9,7 +9,7 @@
     <parameter name="provider" value="selenium"></parameter>
 
     <parameter name="jenkinsRegressionPipeline" value="default_testing, cross_browsing_testing"/>
-    <parameter name="jenkinsRegressionMatrix_cross_browsing_testing" value="browser: chrome; browser: firefox; browser: opera;"/>
+    <parameter name="jenkinsRegressionMatrix_cross_browsing_testing" value="browser: chrome; browser: firefox;"/>
 
     <test name="ebayTest">
         <classes>
