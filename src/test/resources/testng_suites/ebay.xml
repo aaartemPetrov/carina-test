@@ -6,12 +6,8 @@
     <parameter name="jenkinsJobType" value="web"/>
     <parameter name="jenkinsEnvironments" value="DEMO"/>
     <parameter name="jenkinsEmail" value="demo@qaprosoft.com"/>
-    <parameter name="jenkinsRegressionPipeline" value="web_regression, full_regression"/>
-    <parameter name="jenkinsPipelineEnvironments" value="DEMO"/>
     <parameter name="provider" value="selenium"></parameter>
-    <parameter name="jenkinsJobExecutionOrder" value="1"/>
-    <parameter name="jenkinsJobExecutionMode" value="continue"/>
-    <parameter name="jenkinsAutoScreenshot" value="true"/>
+
 
     <test name="ebayTest">
         <classes>

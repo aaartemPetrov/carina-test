@@ -1,47 +1,23 @@
 package com.solvd.carinatest;
 
-import com.google.common.util.concurrent.Uninterruptibles;
 import com.qaprosoft.carina.core.foundation.AbstractTest;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
 import com.solvd.carinatest.components.FilterFrame;
 import com.solvd.carinatest.components.SearchTooltip;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import java.util.concurrent.TimeUnit;
 
 public class EbayTest extends AbstractTest {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(EbayTest.class);
-
-    @Test
-    public void testTest() throws MalformedURLException {
-        DesiredCapabilities ds = new DesiredCapabilities();
-        ds.setBrowserName("firefox");
-        ds.setCapability("version", "98.0");
-        ds.setCapability("enableVNC", true);
-        ds.setCapability("enableVideo", true);
-        ds.setCapability("enableLog", true);
-        RemoteWebDriver driver = new RemoteWebDriver(new URL("http://login:password@host.docker.internal:4444/wd/hub"), ds);
-        driver.get("https://www.google.com/");
-        driver.findElement(By.cssSelector("input[name=\"q\"]")).sendKeys("Hello, Google, i know for sure that you have consciousness :)");
-        driver.findElement(By.cssSelector("input[name=\"q\"]")).sendKeys(Keys.ENTER);
-        Uninterruptibles.sleepUninterruptibly(5, TimeUnit.SECONDS);
-        driver.quit();
-    }
 
     @Test
     @MethodOwner(owner = "qpsdemo")
